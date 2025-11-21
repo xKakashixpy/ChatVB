@@ -55,9 +55,9 @@ Los mensajes preconfigurados están en `src/flows/script.ts`.
 ## Despliegue rápido (Render)
 1. Crear nuevo servicio Web (Node).  
 2. Repo o Deploy desde carpeta con estos archivos.  
-3. Runtime: Node 20+.  
-4. Build command: `npm install && npm run build`  
-5. Start command: `npm start`  
+3. Runtime: Node 20+ (en `render.yaml` se fija a 22.16.0).  
+4. Build command **obligatorio**: `npm install && npm run build` (si no se ejecuta, no existirá `dist/` y verás “Cannot find module dist/index.js”).  
+5. Start command: `npm start`.  
 6. Variables de entorno: copiar las de `.env`.  
 7. URL pública resultante: configurarla como `CALLBACK URL` en Meta Developers para tu app IG.
 
